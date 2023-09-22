@@ -10,5 +10,5 @@ FILE2="${2}"
 
 set -x
 
-diff --color=auto -u <("$SCRIPT_DIR/json-flatten.js" "$FILE1") <("$SCRIPT_DIR/json-flatten.js" "$FILE2")
+diff --color=always -u <("$SCRIPT_DIR/json-flatten.js" "$FILE1") <("$SCRIPT_DIR/json-flatten.js" "$FILE2")
 
